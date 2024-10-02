@@ -1,0 +1,26 @@
+# Node modules
+node_modules/
+
+# Archivos de entorno
+.env
+
+# Archivos de configuración de npm
+package-lock.json
+
+# Archivos temporales y de sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage reports
+coverage/
+
+# Archivos de build
+dist/
+build/
