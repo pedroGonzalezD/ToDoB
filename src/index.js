@@ -41,6 +41,8 @@ app.post("/api/logout", logout);
 app.use(authenticateToken);
 app.use("/api/", todoRoutes);
 
+export default app;
+
 // app.listen(port, () => {
 //   console.log(`servidor escuchando el puerto ${port}`);
 // });
