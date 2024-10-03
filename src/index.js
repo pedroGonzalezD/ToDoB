@@ -9,7 +9,9 @@ import {
   authenticateToken,
 } from "./middleware/authenticateToken.js";
 import { logout } from "./controllers/logoutController.js";
-const mongoURI = "mongodb://localhost:27017/p1";
+import { FRONTEND_URL, MONGODB_URI_STRING } from "./config.js";
+
+const mongoURI = MONGODB_URI_STRING;
 mongoose
   .connect(mongoURI)
   .then(() => console.log("conectato a mongoDB"))
@@ -21,7 +23,7 @@ const port = 5000;
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: FRONTEND_URL,
     credentials: true,
   })
 );
