@@ -19,7 +19,7 @@ mongoose
 
 const app = express();
 app.use(cookieParser());
-const port = 5000;
+// const port = 5000;
 
 app.use(
   cors({
@@ -41,6 +41,6 @@ app.post("/api/logout", logout);
 app.use(authenticateToken);
 app.use("/api/", todoRoutes);
 
-app.listen(port, () => {
-  console.log(`servidor escuchando el puerto ${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`servidor escuchando el puerto ${port}`);
+// });
